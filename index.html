@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Local</title>
+        <link rel="stylesheet" href="./browser.css" />
+    </head>
+    <body>
+        <script src="./browser.js"></script>
+        <script>
+            (async () => {
+                const res = await fetch("./data.json");
+                const data = await res.json();
+                data.forEach((i) => doit(i, null, true));
+            })();
+        </script>
+    </body>
+</html>
