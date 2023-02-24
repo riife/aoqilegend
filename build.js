@@ -16,10 +16,18 @@ async function lsFolder(path = "./", showHide = false) {
     }
     return folders;
 }
-lsFolder()
-    .then((e) => e.sort((a, b) => a - b))
-    .then((e) => console.log("Data:", e) || e)
-    .then(JSON.stringify)
-    .then((e) => writeFile("data.json", e))
-    .then(() => console.log("Saved!"))
-    .catch((e) => console.error(e));
+
+//
+
+//
+
+//
+
+(async function () {
+    const folders = await lsFolder().then((e) => e.sort((a, b) => a - b));
+    const ids = folders.filter((name) => !Number.isNaN(Number(name)));
+    console.log(ids);
+    await writeFile("data.json", JSON.stringify(ids))
+        .then(() => console.log("Saved!"))
+        .catch(() => console.error("Fail!"));
+})();

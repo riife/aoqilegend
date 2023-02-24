@@ -1,10 +1,9 @@
 {
-  "name": "aoqi",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "node build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "aoqilegned",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build": "node build",
+        "deploy": "surgecli upload . aoqilegend.surge.sh"
+    }
 }

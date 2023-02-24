@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=1920" />
+<script src="../spine-player-3.8.js"></script>
+<link rel="stylesheet" href="../spine-player-3.8.css" />
+<div id="player"></div>
+<script>
+new spine.SpinePlayer("player", {
+    jsonUrl: "./peticon4689.json",
+    atlasUrl: "./peticon4689.atlas",
+    animation: "1",
+    backgroundColor: "#ffffff",
+    showControls: false,//隐藏控制界面
+    premultipliedAlpha: false,
+});
+</script>
+</html>
