@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>*</title>
+        <title>aoqi</title>
         <link rel="stylesheet" href="https://cdn.cbd.int/landsoul@latest/dist/landsoul.css" />
         <style>
             .container {
@@ -97,7 +97,7 @@
             </div>
         </main>
 
-        <div class="backtop" onClick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+        <div class="backtop" onClick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</div>
     </body>
 
     <script type="module">
@@ -156,7 +156,7 @@
             },
             template: `
                 <a ref="el" class="item" :id="id" :href="href" target="_blank">
-                    <img :src="isIntoView?src:'https://s2.loli.net/2023/05/25/xwtjKmZBsIUhyb5.gif'" :alt="id" />
+                    <img :src="isIntoView ? src : 'https://s2.loli.net/2023/05/25/xwtjKmZBsIUhyb5.gif'" :alt="id" />
                     <small> {{id}} </small>
                 </a>
             `,
